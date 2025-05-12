@@ -1,0 +1,32 @@
+/* navbar.css */
+.navbar {
+    background-color: var(--background);
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 50;
+  }
+  
+  .navbar a {
+    color: var(--foreground);
+    transition: color 0.2s ease;
+  }
+  
+  .navbar a:hover {
+    color: var(--primary);
+  }
+  
+  .navbar .logo {
+    font-weight: bold;
+    font-size: 1.125rem; /* ~text-lg */
+  }
+  
+  .navbar .nav-links {
+    display: flex;
+    gap: 1.5rem; /* ~space-x-6 */
+  }
+
+html{
+  scroll-behavior: smooth;
+}

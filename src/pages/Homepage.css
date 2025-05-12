@@ -1,0 +1,51 @@
+/* homepage.css */
+
+.homepage .banner {
+  /* Gradient fallback if Tailwind class fails */
+  background-image: linear-gradient(to right, #7c3aed, #4f46e5);
+}
+
+.homepage footer a {
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.homepage footer a:hover {
+  color: var(--foreground); /* Uses shadcn foreground variable */
+  transform: scale(1.1);
+}
+
+.homepage .card {
+  transition: box-shadow 0.3s ease;
+}
+
+.homepage .card:hover {
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+.homepage .carousel-item {
+  padding: 0.5rem;
+}
+
+.homepage .section-title {
+  animation: slideInUp 0.8s ease-out forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideInUp {
+  from {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
